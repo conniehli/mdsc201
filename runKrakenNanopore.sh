@@ -11,7 +11,7 @@ set -euo pipefail
 #######################################
 # User-configurable parameters
 #######################################
-test
+
 FASTQ=""
 SAMPLE_NAME=""
 OUTDIR="results"

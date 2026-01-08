@@ -126,7 +126,7 @@ echo "Running Kraken2 classification..."
 K2_OUTDIR="$OUTDIR/kraken2"
 mkdir -p "$K2_OUTDIR"
 
-k2 classify \
+kraken2 \
   --db "$DB_DIR" \
   --threads "$THREADS" \
   --report "$K2_OUTDIR/${SAMPLE_NAME}_kraken2_report.txt" \

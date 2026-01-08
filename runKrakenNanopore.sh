@@ -86,7 +86,7 @@ echo "Activated Conda environment (shared): mdsc201_np_kraken"
 
 echo "Running NanoQC for sample: $SAMPLE_NAME"
 
-QC_DIR="$OUTDIR/nanoqc/$SAMPLE_NAME"
+QC_DIR="$OUTDIR/$SAMPLE_NAME"
 mkdir -p "$QC_DIR"
 
 nanoQC "$FASTQ" -o "$QC_DIR"
@@ -123,7 +123,7 @@ fi
 
 echo "Running Kraken2 classification..."
 
-K2_OUTDIR="$OUTDIR/kraken2"
+K2_OUTDIR="$OUTDIR"
 mkdir -p "$K2_OUTDIR"
 
 kraken2 \
